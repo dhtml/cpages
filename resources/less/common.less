@@ -1,0 +1,127 @@
+.MarkdownToolbar button[aria-label="Add an image"] {
+  display: none;
+}
+
+
+.popular-tags-link {
+  width: calc(100% - 20px);
+  display: inline-block;
+}
+
+.popular-tags-link .poptag-li {width:100%;}
+
+li.poptag-li {
+  background: #4d698e !important;
+}
+
+.card {
+  height: 7.5em !important;
+}
+
+.Dropdown-separator {
+  margin-top:8px !important;
+}
+
+li.item-birthdays, li.item-achievements, li.item-badges, li.item-rankings, li.item-categories {
+  display:none !important;
+}
+
+li.item-startBottomWidgetSection {
+  margin-top:8px !important;
+}
+
+.BlogScrubber .Sidebar {
+  display:none;
+}
+
+.sideNav .item-tags, .sideNav .item-contactPage {
+  display:none;
+}
+
+/*Bypass tag requirements*/
+.Modal-footer .TagSelectionModal-controls {
+  display:none;
+}
+
+/*Select tag list*/
+.TagSelectionModal  .SelectTagList {
+  background: #fff;
+}
+
+
+.footer-link {
+  margin-left:5px;
+  margin-right:5px;
+  font:inherit;color:inherit;
+}
+
+.footer-separator {
+  display:inline-block;
+}
+
+
+.flexible-list {
+  margin-top:25px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.flexible-list li {
+  display: inline;
+}
+
+.flexible-list a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2em;
+}
+
+.flexible-list i {
+  font-size: 1.5em;
+}
+
+.langlist {
+  width: auto;
+  margin: 1.6rem 0;
+  text-align: left;
+}
+
+.lang-list-active .lang-list-container, .no-js .lang-list-container {
+  visibility: visible;
+  max-height: 10000px;
+  -webkit-transition: max-height 1s ease-in .2s, visibility 1000s ease-in 0ms;
+  -o-transition: max-height 1s ease-in .2s, visibility 1000s ease-in 0ms;
+  -moz-transition: max-height 1s ease-in .2s, visibility 1000s ease-in 0ms;
+  transition: max-height 1s ease-in .2s, visibility 1000s ease-in 0ms;
+}
+
+.langlist>ul {
+  -webkit-column-width: 11.2rem;
+  -moz-column-width: 11.2rem;
+  column-width: 11.2rem;
+}
+
+.hlist ul {
+  margin: 0;
+  padding: 0;
+}
+
+.langlist>ul>li {
+  display: block;
+  line-height: 1.7;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.hlist li, .hlist ul ul {
+  display: inline;
+}
+
+.langlist>ul>li a {
+  white-space: normal;
+}

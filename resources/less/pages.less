@@ -1,0 +1,41 @@
+
+.Header-logo {
+  max-height: 30px;
+  & when (@config-dark-mode = true) {
+    filter: brightness(0) invert(45) sepia(1) hue-rotate(200deg) saturate(1000%) contrast(0.3);
+  }
+}
+
+.App-header {
+  background: #ffffff !important;
+  & when (@config-dark-mode = true) {
+    background: #0f1722 !important;
+  }
+}
+
+.ContentPages {
+  .Hero {
+    margin-top: 0px;
+  }
+  .PageHero-items {list-style: none;}
+
+  .iconcontainer {
+    .fontico {margin-right: 15px}
+  }
+}
+
+.PageHero-items {
+  a {
+    & when (@config-dark-mode = true) {
+      color: #fff;
+    }
+  }
+}
+
+.sideNav {
+  ul {
+    .item-dhtml-sidebar-separatorx {
+      margin-top: 20px !important;
+    }
+  }
+}
