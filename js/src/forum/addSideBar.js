@@ -25,10 +25,14 @@ export default function () {
 
     const priority = 0;
 
+    const translate = (title) => {
+      return cpagedata[title] ?? app.translator.trans('dhtml-cpages.forum.'+title);
+    };
+
     items.add(
       'customLink-1',
       <LinkButton external={false} href={'/tags'} rel="noopener noreferrer" icon='fas fa-th-large'>
-        {app.translator.trans('dhtml-cpages.forum.tags-cloud')}
+        {translate('tags-cloud')}
       </LinkButton>,
       priority
     );
@@ -36,7 +40,7 @@ export default function () {
     items.add(
       'customLink-3',
       <LinkButton external={false} href={'/leaderboard'} rel="noopener noreferrer" icon='fas fa-trophy'>
-        {app.translator.trans('dhtml-cpages.forum.leaderboard')}
+        {translate('leaderboard')}
       </LinkButton>,
       priority
     );
@@ -44,7 +48,7 @@ export default function () {
     items.add(
       'customLink-2',
       <LinkButton external={true} target='_blank' href={'https://d.afr.ng'} rel="noopener noreferrer" icon='fab fa-discord'>
-        {app.translator.trans('dhtml-cpages.forum.discord-chat')}
+        {translate('discord-chat')}
       </LinkButton>,
       priority
     );
@@ -59,7 +63,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-1a',
       <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
-        {app.translator.trans('dhtml-cpages.forum.live')}
+        {translate('live')}
       </LinkButton>,
       -14
     );
@@ -67,7 +71,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-1b',
       <LinkButton external={false} icon="fas fa-briefcase" href={'/t/jobs'}>
-        {app.translator.trans('dhtml-cpages.forum.jobs')}
+        {translate('jobs')}
       </LinkButton>,
       -14
     );
@@ -75,7 +79,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-1c',
       <LinkButton external={false} icon="fas fa-chalkboard-teacher" href={'/t/events'}>
-        {app.translator.trans('dhtml-cpages.forum.events')}
+        {translate('events')}
       </LinkButton>,
       -14
     );
@@ -83,7 +87,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-2',
       <LinkButton external={false} icon="fas fa-tools" href={'/t/workshops'}>
-        {app.translator.trans('dhtml-cpages.forum.workshops')}
+        {translate('workshops')}
       </LinkButton>,
       -14
     );
@@ -91,7 +95,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-3',
       <LinkButton external={false} icon="fas fa-flag-checkered" href={'/t/challenges'}>
-        {app.translator.trans('dhtml-cpages.forum.challenges')}
+        {translate('challenges')}
       </LinkButton>,
       -14
     );
@@ -100,7 +104,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-7',
       <LinkButton external={false} icon="fas fa-tv" href={'/t/showcase'}>
-        {app.translator.trans('dhtml-cpages.forum.showcase')}
+        {translate('showcase')}
       </LinkButton>,
       -14
     );
@@ -116,7 +120,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-90',
       <LinkButton external={false} icon="fas fa-users" href={'/t/community'}>
-        {app.translator.trans('dhtml-cpages.forum.community')}
+        {translate('community')}
       </LinkButton>,
       -14
     );
@@ -131,7 +135,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-about',
       <LinkButton external={false} icon="fas fa-info-circle" href={'/about-us'}>
-        {app.translator.trans('dhtml-cpages.forum.about-us')}
+        {translate('about-us')}
       </LinkButton>,
       -14
     );
@@ -139,7 +143,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-guideline',
       <LinkButton external={false} icon="fas fa-book" href={'/guidelines'}>
-        {app.translator.trans('dhtml-cpages.forum.guidelines')}
+        {translate('guidelines')}
       </LinkButton>,
       -14
     );
@@ -147,7 +151,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-privacy',
       <LinkButton external={false} icon="fas fa-user-secret" href={'/privacy-policy'}>
-        {app.translator.trans('dhtml-cpages.forum.privacy-policy')}
+        {translate('privacy-policy')}
       </LinkButton>,
       -14
     );
@@ -156,7 +160,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-terms',
       <LinkButton external={false} icon="fas fa-file-contract" href={'/terms'}>
-        {app.translator.trans('dhtml-cpages.forum.terms-of-use')}
+        {translate('terms-of-use')}
       </LinkButton>,
       -14
     );
@@ -165,7 +169,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-contact',
       <LinkButton icon="fas fa-at" href={'/contact-us'}>
-        {app.translator.trans('dhtml-cpages.forum.contact-us')}
+        {translate('contact-us')}
       </LinkButton>,
       -14
     );
@@ -174,7 +178,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-download',
       <LinkButton external={false} icon="fas fa-download" href={'/download'}>
-        {app.translator.trans('dhtml-cpages.forum.download-app')}
+        {translate('download-app')}
       </LinkButton>,
       -14
     );
