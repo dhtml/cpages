@@ -115,7 +115,7 @@ export default function () {
     items.add(
       'dhtml-sidebar-membership-8',
       <LinkButton external={false} icon="fas fa-question-circle" href={'/t/questions-and-answers'}>
-        {app.translator.trans('dhtml-cpages.forum.q-a')}
+        {app.translator.trans('q-a')}
       </LinkButton>,
       -14
     );
