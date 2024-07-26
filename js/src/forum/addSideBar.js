@@ -5,11 +5,13 @@ import LinkButton from 'flarum/common/components/LinkButton';
 
 import app from 'flarum/forum/app';
 
-export default function () {
+export default function (translation) {
 
   // Add a link to the tags page, as well as a list of all the tags,
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
+
+    console.log({translation});
 
     //const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
     //console.log({localizedData});
