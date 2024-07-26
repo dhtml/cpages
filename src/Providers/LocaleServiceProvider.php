@@ -28,7 +28,7 @@ class LocaleServiceProvider extends AbstractServiceProvider
 
 
         $keys1 = ['tags-cloud','leaderboard','discord-chat'];
-        $keys2 = ['live','jobs','events','workshops','challenges','showcase','q-a','community'];
+        $keys2 = ['live','jobs','events','workshops','challenges','showcase','questions','community'];
         $keys3 = ['about-us','guidelines','privacy-policy','terms-of-use','contact-us','download-app'];
 
         $data = [];
