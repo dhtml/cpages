@@ -52,7 +52,7 @@ app.initializers.add('dhtml/cpages', () => {
 
 
   //addTopBar();
-  //addSideBar();
+  addSideBar();
 
   addInfinityScroller();
 });

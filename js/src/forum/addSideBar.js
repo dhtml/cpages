@@ -5,8 +5,16 @@ import LinkButton from 'flarum/common/components/LinkButton';
 
 import app from 'flarum/forum/app';
 
-export default function (items,data) {
-    console.log({data});
+export default function () {
+
+  // Add a link to the tags page, as well as a list of all the tags,
+  // to the index page's sidebar.
+  extend(IndexPage.prototype, 'navItems', function (items) {
+
+    //console.log({translation});
+
+    //const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
+    //console.log({localizedData});
 
     const priority = 0;
 
@@ -175,4 +183,6 @@ export default function (items,data) {
     }
 
     items.add('custom-sidebar', CustomFooter(), -14);
+
+  });
 }
