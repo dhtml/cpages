@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of dhtml/flarum-content-pages.
+ * This file is part of dhtml/cpages.
  *
  * Copyright (c) 2024 Anthony Ogundipe.
  *

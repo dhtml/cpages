@@ -13,7 +13,7 @@ export default function () {
     items.add(
       'topLink-1',
       <LinkButton className="LinksButton Button Button--link" external={false} href={'/'} rel="noopener noreferrer" icon='fas fa-home'>
-        {app.translator.trans('flarum-content-pages.forum.home')}
+        {app.translator.trans('dhtml-cpages.forum.home')}
       </LinkButton>,
       priority
     );
@@ -21,7 +21,7 @@ export default function () {
     items.add(
       'topLink-2',
       <LinkButton  className="LinksButton Button Button--link" external={false} href={'/about-us'} rel="noopener noreferrer" icon='fas fa-info-circle'>
-        {app.translator.trans('flarum-content-pages.forum.about-us')}
+        {app.translator.trans('dhtml-cpages.forum.about-us')}
       </LinkButton>,
       priority
     );
