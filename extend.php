@@ -36,4 +36,9 @@ return [
     (new Extend\Routes('api'))
         ->get('/cpages-data', 'cpages.data', DataApiController::class),
 
+    (new Extend\Settings())
+        ->serializeToForum('dhtml-cpages.locale', "dhtml-cpages.locale",null,null),
+
+    (new Extend\ServiceProvider())
+        ->register(Providers\LocaleServiceProvider::class),
 ];

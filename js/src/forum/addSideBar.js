@@ -12,15 +12,16 @@ export default function () {
   extend(IndexPage.prototype, 'navItems', function (items) {
 
     const currentLocale = app.data.locale;
-
     console.log('currentLocale:', currentLocale);
 
-    //const cpagedata = app.forum.attribute('cpagedata');
+    let cpagedata = app.forum.attribute('dhtml-cpages.locale');
 
-    //console.log({translation});
+    try {
+      cpagedata = JSON.parse(cpagedata);
+    } catch (e) {}
 
-    //const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
-    //console.log({localizedData});
+    console.log({cpagedata});
+
 
     const priority = 0;
 
