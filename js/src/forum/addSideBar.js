@@ -17,8 +17,11 @@ export default function () {
     let cpagedata = app.forum.attribute('dhtml-cpages.locale');
 
     try {
-      cpagedata = JSON.parse(cpagedata)[currentLocale];
-    } catch (e) {}
+      cpagedata = JSON.parse(cpagedata);
+      cpagedata = cpagedata[currentLocale]
+    } catch (e) {
+      console.log("Error: ",e);
+    }
 
     console.log({cpagedata});
 
