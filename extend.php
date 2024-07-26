@@ -11,6 +11,7 @@
 
 namespace Dhtml\Cpages;
 
+use Dhtml\Cpages\Api\Controllers\DataApiController;
 use Dhtml\Cpages\Api\Controllers\PagesApiController;
 use Dhtml\Cpages\Api\Controllers\TranslateApiController;
 use Flarum\Extend;
@@ -30,5 +31,9 @@ return [
 
     (new Extend\Routes('api'))
         ->get('/cpage/{slug}', 'cpages.load', PagesApiController::class),
+
+    (new Extend\Routes('api'))
+        ->get('/cpages-data', 'cpages.data', DataApiController::class),
+
 
 ];
