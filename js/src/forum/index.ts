@@ -10,6 +10,7 @@ import addTopBar from "./addTopBar";
 
 app.initializers.add('dhtml/cpages', () => {
 
+  /*
   const store = new ObjectStore();
 
   extend(IndexPage.prototype, 'sidebarItems', function (items:any) {
@@ -33,6 +34,7 @@ app.initializers.add('dhtml/cpages', () => {
     }
 
   });
+  */
 
 
     const slugs = [
