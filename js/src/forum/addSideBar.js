@@ -11,6 +11,12 @@ export default function () {
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
 
+    const currentLocale = app.data.locale;
+
+    console.log('currentLocale:', currentLocale);
+
+    //const cpagedata = app.forum.attribute('cpagedata');
+
     //console.log({translation});
 
     //const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
