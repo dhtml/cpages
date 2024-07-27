@@ -48,6 +48,7 @@ export default function () {
       priority
     );
 
+    /*
     items.add(
       'customLink-2',
       <LinkButton external={true} target='_blank' href={'https://d.afr.ng'} rel="noopener noreferrer" icon='fab fa-discord'>
@@ -55,6 +56,7 @@ export default function () {
       </LinkButton>,
       priority
     );
+     */
 
     items.add(
       'customSeparator-1',
@@ -63,6 +65,7 @@ export default function () {
     );
 
 
+    /*
     items.add(
       'dhtml-sidebar-membership-1a',
       <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
@@ -111,6 +114,7 @@ export default function () {
       </LinkButton>,
       -14
     );
+     */
 
     items.add(
       'dhtml-sidebar-membership-8',
