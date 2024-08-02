@@ -98,6 +98,7 @@ export default function () {
       </LinkButton>,
       -14
     );
+    */
 
     items.add(
       'dhtml-sidebar-membership-3',
@@ -115,7 +116,6 @@ export default function () {
       </LinkButton>,
       -14
     );
-     */
 
     items.add(
       'dhtml-sidebar-membership-8',
