@@ -65,15 +65,6 @@ export default function () {
     );
 
 
-    /*
-    items.add(
-      'dhtml-sidebar-membership-1a',
-      <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
-        {translate('live')}
-      </LinkButton>,
-      -14
-    );
-
     items.add(
       'dhtml-sidebar-membership-1b',
       <LinkButton external={false} icon="fas fa-briefcase" href={'/t/jobs'}>
@@ -89,6 +80,16 @@ export default function () {
       </LinkButton>,
       -14
     );
+
+    /*
+    items.add(
+      'dhtml-sidebar-membership-1a',
+      <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
+        {translate('live')}
+      </LinkButton>,
+      -14
+    );
+
 
     items.add(
       'dhtml-sidebar-membership-2',
