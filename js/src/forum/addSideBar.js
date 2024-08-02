@@ -68,6 +68,14 @@ export default function () {
 
 
     items.add(
+      'dhtml-sidebar-membership-90',
+      <LinkButton external={false} icon="fas fa-users" href={'/t/community'}>
+        {translate('community')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
       'dhtml-sidebar-membership-1b',
       <LinkButton external={false} icon="fas fa-briefcase" href={'/t/jobs'}>
         {translate('jobs')}
@@ -127,13 +135,6 @@ export default function () {
       -14
     );
 
-    items.add(
-      'dhtml-sidebar-membership-90',
-      <LinkButton external={false} icon="fas fa-users" href={'/t/community'}>
-        {translate('community')}
-      </LinkButton>,
-      -14
-    );
 
 
     items.add(
