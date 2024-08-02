@@ -32,6 +32,7 @@ export default function () {
       return cpagedata[title] ?? app.translator.trans('dhtml-cpages.forum.'+title);
     };
 
+    /*
     items.add(
       'customLink-1',
       <LinkButton external={false} href={'/tags'} rel="noopener noreferrer" icon='fas fa-th-large'>
@@ -39,6 +40,7 @@ export default function () {
       </LinkButton>,
       priority
     );
+     */
 
     items.add(
       'customLink-3',
@@ -140,6 +142,7 @@ export default function () {
       -14
     );
 
+    /*
     items.add(
       'dhtml-sidebar-about',
       <LinkButton external={false} icon="fas fa-info-circle" href={'/about-us'}>
@@ -181,6 +184,7 @@ export default function () {
       </LinkButton>,
       -14
     );
+    */
 
 
     items.add(
